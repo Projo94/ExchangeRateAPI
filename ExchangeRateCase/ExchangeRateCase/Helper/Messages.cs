@@ -2,9 +2,7 @@
 {
     public static class Messages
     {
-        public const string DATE_ERROR_KEY = "Date issue";
-        public const string REMOTE_SERVICE_ERROR_KEY = "Remote service issue";
-        public const string CALCULATION_ERROR_KEY = "Calculation issue";
+        public const string ERROR_KEY = "Error";
         public const string DATE_LIST_ERROR_MESSAGE = "The provided date set should consist of at least one date value.";
         public const string RATE_CONVERT_ERROR_MESSAGE = "An error ocurred during getting data from remote server.";
         public const string CALCULATION_ERROR_MESSAGE = "An error ocurred during calculating avg/max/min rates.";

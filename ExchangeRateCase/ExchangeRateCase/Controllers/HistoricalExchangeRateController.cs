@@ -37,7 +37,7 @@ namespace ExchangeRateCase.Controllers
             if (validationResult is not null)
             {
                 ModelState.AddModelError(
-                    Messages.DATE_ERROR_KEY,
+                    Messages.ERROR_KEY,
                     validationResult
                     );
                 return BadRequest(ModelState);
@@ -52,7 +52,7 @@ namespace ExchangeRateCase.Controllers
             catch (Exception ex)
             {
                 ModelState.AddModelError(
-                      Messages.REMOTE_SERVICE_ERROR_KEY,
+                      Messages.ERROR_KEY,
                       $"{Messages.RATE_CONVERT_ERROR_MESSAGE} {Messages.ERROR_MESSAGE}: {ex.Message}"
                   );
                 return BadRequest(ModelState);
@@ -69,7 +69,7 @@ namespace ExchangeRateCase.Controllers
                 catch (Exception ex)
                 {
                     ModelState.AddModelError(
-                      Messages.CALCULATION_ERROR_KEY,
+                      Messages.ERROR_KEY,
                       $"{ Messages.CALCULATION_ERROR_MESSAGE} {Messages.ERROR_MESSAGE}: {ex.Message}"
                     );
                     return BadRequest(ModelState);
@@ -82,7 +82,7 @@ namespace ExchangeRateCase.Controllers
             else
             {
                 ModelState.AddModelError(
-                       Messages.REMOTE_SERVICE_ERROR_KEY,
+                       Messages.ERROR_KEY,
                        Messages.CORRUPTED_DATA_MESSAGE
                    );
                 return BadRequest(ModelState);

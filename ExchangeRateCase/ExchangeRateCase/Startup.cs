@@ -36,7 +36,6 @@ namespace ExchangeRateCase
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Exchange rate API", Version = "v1" });
             });
 
-
             services.AddScoped<IHistoricalExchangeRateService, HistoricalExchangeRateService>();
 
             services.AddScoped<IDateCollectionValidatorService, DateCollectionValidatorService>();
@@ -45,8 +44,6 @@ namespace ExchangeRateCase
 
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
         {
-
-
             app.Use(async (context, next) =>
             {
                 context.Response.Headers["Access-Control-Allow-Origin"] = "*";
