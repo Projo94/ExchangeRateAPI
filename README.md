@@ -6,7 +6,7 @@
 4)	After importing project you should be able to see on the right hand side project structure
 5)	Run the project using green arrow.
 6)	After executing the project, you will need some tool for testing WEB API (for example Postman).
-8)	Select POST as Action method in Postman
+8)	Select POST as Action method in Postman.
 9)  URL endpoint for accessing WEB API is: https://localhost:44301/api/historicalexchangerate/rates?baseCurrency=SEK&targetCurrency=NOK
     **Note**: The port can be changed according to your preferences.
 10) You should provide dates array as JSON object in the format as shown below:
@@ -55,7 +55,7 @@
     			}
   } 
 
-	You will get custom error message JSON object as result, as shown below:
+  You will get custom error message JSON object as result, as shown below:
   {
     "errors": {
         "listDate": [
@@ -89,7 +89,6 @@
         ]
     }
   }
-
   You will receive the following error message:
   {
     "Date issue": [
