@@ -20,7 +20,7 @@ namespace ExchangeRateCaseSolution.Services.DateCollectionValidatorService
             {
                 if (date > DateTime.Now)
                 {
-                    result = $"{Messages.DATE_AHEAD_ERROR_MESSAGE}:{date.ToString("yyyy-MM-dd")}";
+                    result = $"{Messages.DATE_AHEAD_ERROR_MESSAGE} {date.ToString("yyyy-MM-dd")}";
                     break;
                 }
             }
