@@ -34,7 +34,7 @@ namespace ExchangeRateCase.Services
 
             if (dictionary.Keys.Count > 0)
             {
-                avgMinMax.Avg = dictionary.Average(k => k.Key);
+                avgMinMax.Avg = Math.Round(dictionary.Average(k => k.Key), 16);
                 avgMinMax.Min = dictionary.Keys.Min();
                 avgMinMax.DateMin = dictionary[avgMinMax.Min].ToString("yyyy-MM-dd");
                 avgMinMax.Max = dictionary.Keys.Max();
