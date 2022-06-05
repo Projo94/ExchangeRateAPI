@@ -43,11 +43,11 @@ Providing list of dates is mandatory, in order to get valid result.  Otherwise y
 In the case you provide empty array, for an example:
    
   ```json
-  {
-    		"date": {
-        		"data": []
-    		}
-  }
+{
+    "date": {
+        "data": []
+    }
+}
   ```
   You will get custom error message JSON object as result, as shown below:
   ```json
