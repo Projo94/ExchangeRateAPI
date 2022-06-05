@@ -52,10 +52,10 @@ In the case you provide empty array, for an example:
   You will get custom error message JSON object as result, as shown below:
   ```json
   {
-    		"Date issue": [
-        		"The provided date set should consist of at least one date value."
-    		]
-  }
+    "Error": [
+        "The provided date set should consist of at least one date value."
+    ]
+}
   ```
 
 </p>
@@ -110,12 +110,10 @@ If the remote service does not have data for any of the dates in the list of dat
 ```   
    
 You will receive the following error message:
-
-
    
 ```json
   {
-    "Remote service issue": [
+    "Error": [
         "Corrupted data from remote server."
     ]
   }
@@ -141,7 +139,7 @@ You will receive the following error message:
  
 ```json
   {
-    "Date issue": [
+    "Error": [
         "Cannot fetch data for dates ahead. Date ahead: 2023-01-01"
     ]
  }
