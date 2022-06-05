@@ -10,7 +10,7 @@
 9)  URL endpoint for accessing WEB API is: https://localhost:44301/api/historicalexchangerate/rates?baseCurrency=SEK&targetCurrency=NOK
     **Note**: The port can be changed according to your preferences.
     
-   - You should provide date array as JSON object in the format as shown below:
+   - You should provide date array as JSON object in the format yyyy-MM-dd, as shown below:
 
 ```json
 {
@@ -27,11 +27,11 @@
    - After calling the API, you will get result in JSON object as shown below:
    
 ```json
- {
+{
     "data": {
-        "avg": "An average rate of 0.970839476467",
-        "max": "A max rate of 0.9815486993 on 2018-02-15",
-        "min": "A min rate of 0.9546869595 on 2018-03-01"
+        "avg": "An average rate of 0.9702316666666667",
+        "max": "A max rate of 0.979845 on 2018-02-15",
+        "min": "A min rate of 0.952702 on 2018-03-01"
     },
     "result": "Success"
 }
